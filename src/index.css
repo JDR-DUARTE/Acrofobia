@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@font-face {
+  font-family: "Berlin Sans FB Demi";
+  src: url("/src/assets/fonts/BerlinSansFBDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald";
+  --font-body: "Poppins", sans-serif;
+  --color-primario: #fecb00; 
+} 
+
+:root {
+  --color-primario: #fecb00;
+}
