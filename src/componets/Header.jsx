@@ -36,7 +36,7 @@ function Header() {
                         onMouseLeave={() => setIsOpen(false)}
                     >
                         <span className="hover:text-primario cursor-pointer">
-                            CLASES
+                            PLANES
                         </span>
 
                         {isOpen && (
@@ -59,6 +59,12 @@ function Header() {
                                 >
                                     Entrenamiento Personalizado
                                 </Link>
+                                <Link
+                                    to="/TuPlan"
+                                    className="block px-4 py-2 hover:bg-primario hover:border hover:border-amber-400 rounded-md hover:text-black transition"
+                                >
+                                    TU PLAN
+                                </Link>
                             </div>
                         )}
                     </div>
@@ -66,9 +72,10 @@ function Header() {
                     <a href="#instalaciones" className="hover:text-primario">INSTALACIONES</a>
                     <a href="#precios" className="hover:text-primario">NOSOTROS</a>
                     <a href="#contacto" className="hover:text-primario">CONTACTO</a>
-                    <a href="#TuPlan" className="hover:text-primario">TU PLAN</a>
+                    <a href="#TIENDA" className="hover:text-primario">TIENDA</a>
                 </nav>
             </div >
+
 
             {isSubMenu && (
                 <div
@@ -79,7 +86,7 @@ function Header() {
                             className="text-white"
                             onClick={() => setSubMenu(false)}
                         >
-                            X
+                        X
                         </button>
                     </div>
 
@@ -91,13 +98,15 @@ function Header() {
                             <span className={activeLink === 'clases' ? 'text-primario font-bold' : 'text-white'}>CLASES</span>
                             <span>{isMobileClases ? '▲' : '▼'}</span>
                         </div>
-
+                       
                         {/* Submenú desplegable */}
                         {isMobileClases && (
                             <div className="pl-4 space-y-1">
                                 <Link to="/clases-adultos" className="block py-1 text-white hover:text-body">Escalada Adultos</Link>
                                 <Link to="/clases-kids" className="block py-1 text-white hover:text-body">Escalada Niños</Link>
                                 <Link to="/entrenamiento" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
+                                <Link to="/TuPlan" className="block py-1 text-white hover:text-body">TU PLAN</Link>
+
                             </div>
                         )}
                     </div>
@@ -139,8 +148,9 @@ function Header() {
                         className={`block mb-3 cursor-pointer ${activeLink === 'TuPlan' ? 'text-primario' : 'text-white'}`}
                         onClick={() => setActiveLink('TuPlan')}
                     >
-                        TU PLAN
+                        TIENDA
                     </a>
+                    
                 </div>
             )}
         </header >

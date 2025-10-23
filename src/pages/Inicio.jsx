@@ -11,8 +11,8 @@ function Inicio() {
         <>
             <BackgroundVideo />
             <TextoV />
-            <div className="relative z-10 bg-black text-white">
 
+            <div className="relative z-10 bg-black text-white">
                 <div className="h-20"></div>
                 <div className="w-[350px] sm:w-[400px] md:w-[1000px] mx-auto border-t-2 border-white mt-0"></div>
                 <div className="h-2 sm:h-5 "></div>
@@ -46,8 +46,7 @@ function Inicio() {
                     <Card imagen={adultosImg} title="ESCALADA ADULTOS" link="/clases-adultos" />
                     <Card imagen={ninosImg} title="ESCALADA NIÑOS" link="/clases-kids" />
                 </div>
-
-                <Footer />
+                <div className="h-8 sm:h-10 bg-black"></div>
             </div>
         </>
     )

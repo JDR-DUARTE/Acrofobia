@@ -45,7 +45,7 @@ function Footer() {
                     
                     {/* Columna 3: Clases y Servicios */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Clases</h3>
+                        <h3 className="text-lg font-semibold mb-4">Planes</h3>
                         <ul className="space-y-2 text-sm">
                             <li><Link to="/clases-adultos" className="text-gray-400 hover:text-primario transition">Escalada Adultos</Link></li>
                             <li><Link to="/clases-kids" className="text-gray-400 hover:text-primario transition">Escalada Niños</Link></li>
