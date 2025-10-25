@@ -28,7 +28,7 @@ function TuPlan() {
             return;
         }
 
-        // 2️⃣ Buscar suscripción activa o última
+        //  Buscar suscripción activa o última
         const { data: subs, error: subsError } = await supabase
             .from("suscripciones")
             .select("*")

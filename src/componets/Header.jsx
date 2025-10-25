@@ -42,7 +42,7 @@ function Header() {
                         {isOpen && (
                             <div className=" absolute left-0  w-56 bg-white/50 backdrop-blur-md rounded-lg shadow-lg font-body text-base">
                                 <Link
-                                    to="/clases-adultos"
+                                    to="/Adultos"
                                     className="block px-4 py-2 hover:bg-primario hover:border hover:border-amber-400 rounded-md hover:text-black transition"
                                 >
                                     Escalada Adultos
@@ -102,7 +102,7 @@ function Header() {
                         {/* Submenú desplegable */}
                         {isMobileClases && (
                             <div className="pl-4 space-y-1">
-                                <Link to="/clases-adultos" className="block py-1 text-white hover:text-body">Escalada Adultos</Link>
+                                <Link to="/Adultos" className="block py-1 text-white hover:text-body">Escalada Adultos</Link>
                                 <Link to="/clases-kids" className="block py-1 text-white hover:text-body">Escalada Niños</Link>
                                 <Link to="/entrenamiento" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
                                 <Link to="/TuPlan" className="block py-1 text-white hover:text-body">TU PLAN</Link>
@@ -144,9 +144,9 @@ function Header() {
                     </a>
 
                     <a
-                        href="#TuPlan"
-                        className={`block mb-3 cursor-pointer ${activeLink === 'TuPlan' ? 'text-primario' : 'text-white'}`}
-                        onClick={() => setActiveLink('TuPlan')}
+                        href="#Tienda"
+                        className={`block mb-3 cursor-pointer ${activeLink === 'Tienda' ? 'text-primario' : 'text-white'}`}
+                        onClick={() => setActiveLink('Tienda')}
                     >
                         TIENDA
                     </a>
