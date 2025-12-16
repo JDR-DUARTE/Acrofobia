@@ -48,13 +48,13 @@ function Header() {
                                     Escalada Adultos
                                 </Link>
                                 <Link
-                                    to="/clases-niños"
+                                    to="/Ninos"
                                     className="block px-4 py-2  hover:bg-primario hover:border hover:border-amber-400 rounded-md hover:text-black transition"
                                 >
                                     Escalada Niños
                                 </Link>
                                 <Link
-                                    to="/entrenamiento"
+                                    to="/Personalizado"
                                     className="block px-4 py-2 hover:bg-primario hover:border hover:border-amber-400 rounded-md hover:text-black transition"
                                 >
                                     Entrenamiento Personalizado
@@ -95,16 +95,15 @@ function Header() {
                             className="flex justify-between items-center cursor-pointer py-2"
                             onClick={() => setMobileClases(!isMobileClases)}
                         >
-                            <span className={activeLink === 'clases' ? 'text-primario font-bold' : 'text-white'}>CLASES</span>
+                            <span className={activeLink === 'clases' ? 'text-primario font-bold' : 'text-white'}>PLANES</span>
                             <span>{isMobileClases ? '▲' : '▼'}</span>
                         </div>
-                       
                         {/* Submenú desplegable */}
                         {isMobileClases && (
                             <div className="pl-4 space-y-1">
                                 <Link to="/Adultos" className="block py-1 text-white hover:text-body">Escalada Adultos</Link>
-                                <Link to="/clases-kids" className="block py-1 text-white hover:text-body">Escalada Niños</Link>
-                                <Link to="/entrenamiento" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
+                                <Link to="/Ninos" className="block py-1 text-white hover:text-body">Escalada Niños</Link>
+                                <Link to="/Perzonalizado" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
                                 <Link to="/TuPlan" className="block py-1 text-white hover:text-body">TU PLAN</Link>
 
                             </div>

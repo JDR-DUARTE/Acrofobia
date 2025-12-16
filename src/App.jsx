@@ -5,6 +5,9 @@ import Precios from "./pages/Precios";
 import TuPlan from "./pages/TuPlan";
 import Footer from "./componets/Footer";
 import Adultos from "./pages/Adultos";
+import Ninos from "./pages/Ninos";
+
+import Personalizado from "./pages/Personalizado";
 
 function App() {
   return (
@@ -16,9 +19,11 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Inicio />} />
-            <Route path="/precios" element={<Precios />} />
             <Route path="/TuPlan" element={<TuPlan/>}/>
             <Route path="/Adultos" element={<Adultos/>}/>
+            <Route path="/Ninos" element={<Ninos/>}/>
+            <Route path="/Personalizado" element={<Personalizado/>} />
+            <Route path="/precios" element={<Precios />} />
           </Routes>
         </main>
 

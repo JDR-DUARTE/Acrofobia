@@ -47,9 +47,9 @@ function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Planes</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to="/clases-adultos" className="text-gray-400 hover:text-primario transition">Escalada Adultos</Link></li>
-                            <li><Link to="/clases-kids" className="text-gray-400 hover:text-primario transition">Escalada Niños</Link></li>
-                            <li><Link to="/entrenamiento" className="text-gray-400 hover:text-primario transition">Entrenamiento Personal</Link></li>
+                            <li><Link to="/Adultos" className="text-gray-400 hover:text-primario transition">Escalada Adultos</Link></li>
+                            <li><Link to="/Ninos" className="text-gray-400 hover:text-primario transition">Escalada Niños</Link></li>
+                            <li><Link to="/Personalizado" className="text-gray-400 hover:text-primario transition">Entrenamiento Personal</Link></li>
                         </ul>
                     </div>
 
@@ -74,10 +74,10 @@ function Footer() {
                     {/* 2. SECCIÓN DE COPYRIGHT Y LEGAL */}
                     <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
                         <p>&copy; {new Date().getFullYear()} Club de Escalada Acrofobia. Todos los derechos reservados.</p>
-                        <div className="mt-3 sm:mt-0 space-x-4">
+                        {/* <div className="mt-3 sm:mt-0 space-x-4">
                             <Link to="/aviso-legal" className="hover:text-primario transition">Aviso Legal</Link>
                             <Link to="/privacidad" className="hover:text-primario transition">Política de Privacidad</Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

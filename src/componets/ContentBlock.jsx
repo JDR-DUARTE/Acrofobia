@@ -1,4 +1,4 @@
-function ContentBlock( { titulo, align = 'center', imagen, text, imagePosition = 'left' }) {
+function ContentBlock( { titulo, align = 'center', imagen, text, imagePosition = 'left', horario }) {
     const alignmentClass =
         align === "left" ? "md:text-left" :
             align === "right" ? "md:text-right" :
@@ -18,18 +18,24 @@ function ContentBlock( { titulo, align = 'center', imagen, text, imagePosition =
             <div className={`max-w-4xl mx-auto flex flex-col ${flexDirection} items-center justify-center text-center gap-20`}>
                 {imagen && (
                     <img
-                        className="w-20 sm:w-32 md:w-48 lg:w-90 h-auto rounded-lg shadow-lg"
+                        className="w-70 sm:w-50 md:w-48 lg:w-100 h-auto rounded-lg shadow-lg"
                         src={imagen}
                         alt={titulo}
                     />
                 )}
 
                 {text && (
-                    <p className="font-body text-base text-white text-left sm:text-lg md:text-xl">
+                    <p className="font-body text-base text-white text-left sm:text-lg md:text-xl whitespace-pre-line">
                         {text}
                     </p>
                 )}
+                
             </div>
+            {horario && (
+                    <p className="font-body text-base text-primario text-right sm:text-lg md:text-xl pr-10 sm:pr-14 whitespace-pre-line">
+                        {horario}
+                    </p>
+                )}
         </div>
     );
 }
