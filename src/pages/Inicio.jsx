@@ -4,13 +4,16 @@ import Card from "../componets/Card";
 import adultosImg from "../assets/adullto.jpg";
 import ninosImg from "../assets/nino.jpg";
 import acro from '../assets/acro2_11.png';
-import Footer from "../componets/Footer";
+import videoInicio from '../assets/video.mp4'
 
 function Inicio() {
     return (
         <>
-            <BackgroundVideo />
-            <TextoV />
+            <BackgroundVideo 
+                videoSrc={videoInicio}
+                textoV={<TextoV/>}
+                darckOverlay={true}
+            />
 
             <div className="relative z-10 bg-black text-white">
                 <div className="h-20"></div>

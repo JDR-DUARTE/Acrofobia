@@ -1,27 +1,29 @@
-import bgVideo from '../assets/video.mp4'
-function BackgroundVideo() {
+function BackgroundVideo({ videoSrc, textoV , darkOverlay=false}) {
     return (
-            <div className="absolute inset-0 overflow-hidden -z-10">
-                <video
-                    className="w-full h-full object-cover"
-                    src={bgVideo} // CAMBIA ESTO
-                    autoPlay
-                    loop
-                    muted
-                    playsInline // Importante para móviles
-                >
-                    Tu navegador no soporta el tag de video.
-                </video>
-
-                {/* Opcional: Una capa oscura (overlay) para asegurar que el texto sea legible */}
-                <div className="absolute inset-0 bg-black opacity-20"></div>
-                <div>
-                    <h1 className='text-5xl font-bold font-display'>
-                        Acrofobia
-                    </h1>
+       
+        <div className="relative w-full h-screen overflow-hidden">
+            
+            {/* 2. El video ahora es 'absolute' pero solo RELATIVO a su padre (el div de arriba) */}
+            <video
+                className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+                src={videoSrc}
+                autoPlay
+                loop
+                muted
+                playsInline
+            >
+                Tu navegador no soporta el tag de video.
+            </video>
+            {darkOverlay && (
+                <div className="absolute inset-0 bg-black/40 z-0"></div>
+            )}
+            {textoV &&(
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+                    {textoV}
                 </div>
-            </div>
-
+            )}
+            
+        </div>
     )
 }
 

@@ -69,10 +69,10 @@ function Header() {
                         )}
                     </div>
                     <a href="/precios" className="hover:text-primario">PRECIOS</a>
-                    <a href="#instalaciones" className="hover:text-primario">INSTALACIONES</a>
-                    <a href="#precios" className="hover:text-primario">NOSOTROS</a>
-                    <a href="#contacto" className="hover:text-primario">CONTACTO</a>
-                    <a href="#TIENDA" className="hover:text-primario">TIENDA</a>
+                    <a href="/Instalaciones" className="hover:text-primario">INSTALACIONES</a>
+                    <a href="/Nosotros" className="hover:text-primario">NOSOTROS</a>
+                    <a href="/Contacto" className="hover:text-primario">CONTACTO</a>
+                    <a href="/Tienda" className="hover:text-primario">TIENDA</a>
                 </nav>
             </div >
 
@@ -103,7 +103,7 @@ function Header() {
                             <div className="pl-4 space-y-1">
                                 <Link to="/Adultos" className="block py-1 text-white hover:text-body">Escalada Adultos</Link>
                                 <Link to="/Ninos" className="block py-1 text-white hover:text-body">Escalada Niños</Link>
-                                <Link to="/Perzonalizado" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
+                                <Link to="/Personalizado" className="block py-1 text-white hover:text-body">Entrenamiento Personalizado</Link>
                                 <Link to="/TuPlan" className="block py-1 text-white hover:text-body">TU PLAN</Link>
 
                             </div>
@@ -119,7 +119,7 @@ function Header() {
                     </a>
 
                     <a
-                        href="#instalaciones"
+                        href="/Instalaciones"
                         className={`block mb-3 cursor-pointer ${activeLink === 'instalaciones' ? 'text-primario' : 'text-white'}`}
                         onClick={() => setActiveLink('instalaciones')}
                     >
@@ -127,7 +127,7 @@ function Header() {
                     </a>
 
                     <a
-                        href="#nosotros"
+                        href="/Nosotros"
                         className={`block mb-3 cursor-pointer ${activeLink === 'nosotros' ? 'text-primario' : 'text-white'}`}
                         onClick={() => setActiveLink('nosotros')}
                     >
@@ -135,7 +135,7 @@ function Header() {
                     </a>
 
                     <a
-                        href="#contacto"
+                        href="/Contacto"
                         className={`block mb-3 cursor-pointer ${activeLink === 'contacto' ? 'text-primario' : 'text-white'}`}
                         onClick={() => setActiveLink('contacto')}
                     >
@@ -143,7 +143,7 @@ function Header() {
                     </a>
 
                     <a
-                        href="#Tienda"
+                        href="/Tienda"
                         className={`block mb-3 cursor-pointer ${activeLink === 'Tienda' ? 'text-primario' : 'text-white'}`}
                         onClick={() => setActiveLink('Tienda')}
                     >
