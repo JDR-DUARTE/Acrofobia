@@ -49,6 +49,7 @@ function Inicio() {
                     <Card imagen={adultosImg} title="ESCALADA ADULTOS" link="/clases-adultos" />
                     <Card imagen={ninosImg} title="ESCALADA NIÑOS" link="/clases-kids" />
                 </div>
+                
                 <div className="h-8 sm:h-10 bg-black"></div>
             </div>
         </>
